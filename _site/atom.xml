@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>The Geek Debauchery</title>
- <link href="http://username.github.com/atom.xml" rel="self"/>
- <link href="http://username.github.com"/>
- <updated>2012-09-22T14:27:01+02:00</updated>
- <id>http://username.github.com</id>
+ <link href="http://vbajpai.github.com/blog/atom.xml" rel="self"/>
+ <link href="http://vbajpai.github.com/blog"/>
+ <updated>2012-09-22T16:33:40+02:00</updated>
+ <id>http://vbajpai.github.com/blog</id>
  <author>
    <name>Vaibhav Bajpai</name>
    <email>contact@vaibhavbajpai.com</email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Git inside Git</title>
-   <link href="http://username.github.com/2012/05/24/git-inside-git"/>
+   <link href="http://vbajpai.github.com/blog/2012/05/24/git-inside-git"/>
    <updated>2012-05-24T00:00:00+02:00</updated>
-   <id>http://username.github.com/2012/05/24/git-inside-git</id>
+   <id>http://vbajpai.github.com/blog/2012/05/24/git-inside-git</id>
    <content type="html">&lt;p&gt;I use &lt;a href='https://github.com/carlhuda/janus'&gt;janus &amp;#8594;&lt;/a&gt; and &lt;a href='https://github.com/robbyrussell/oh-my-zsh/'&gt;oh-my-zsh &amp;#8594;&lt;/a&gt; to setup a part of my dotfiles configuration.&lt;/p&gt;
 
 &lt;p&gt;My &lt;a href='https://github.com/vbajpai/dotfiles/'&gt;dotfiles &amp;#8594;&lt;/a&gt; configuration is setup as a git repository and because the aforementioned frameworks are git repositories themselves, I was faced with the task of setting up git inside git! Since I have used &lt;code&gt;svn externals&lt;/code&gt; before, I was sure there must be a way to do this. It turned out to be called &lt;a href='http://git-scm.com/book/en/Git-Tools-Submodules'&gt;git submodules &amp;#8594;&lt;/a&gt;&lt;/p&gt;
@@ -42,9 +42,9 @@
  
  <entry>
    <title>Default to clang on Mac OS X</title>
-   <link href="http://username.github.com/2012/05/20/default-to-clang-on-mac-os-x"/>
+   <link href="http://vbajpai.github.com/blog/2012/05/20/default-to-clang-on-mac-os-x"/>
    <updated>2012-05-20T00:00:00+02:00</updated>
-   <id>http://username.github.com/2012/05/20/default-to-clang-on-mac-os-x</id>
+   <id>http://vbajpai.github.com/blog/2012/05/20/default-to-clang-on-mac-os-x</id>
    <content type="html">&lt;p&gt;The default compiler on Mac OS X Lion is &lt;code&gt;gcc-llvm&lt;/code&gt;.&lt;br /&gt;I have decided to default to &lt;code&gt;clang&lt;/code&gt; to take advantage of its static analysis capabilities:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;export CC=clang
@@ -54,9 +54,9 @@ export CXX=c++&lt;/code&gt;&lt;/pre&gt;</content>
  
  <entry>
    <title>Remote iPhone Packet Captures</title>
-   <link href="http://username.github.com/2012/04/18/remote-iphone-packet-captures"/>
+   <link href="http://vbajpai.github.com/blog/2012/04/18/remote-iphone-packet-captures"/>
    <updated>2012-04-18T00:00:00+02:00</updated>
-   <id>http://username.github.com/2012/04/18/remote-iphone-packet-captures</id>
+   <id>http://vbajpai.github.com/blog/2012/04/18/remote-iphone-packet-captures</id>
    <content type="html">&lt;p&gt;Create the Remote Virtual Interface&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ rvictl -s $UDID&lt;/code&gt;&lt;/pre&gt;
@@ -76,9 +76,9 @@ rvi0: flags=3005&amp;lt;UP,DEBUG,LINK0,LINK1&amp;gt; mtu 0&lt;/code&gt;&lt;/pre&
  
  <entry>
    <title>Provisioning a VM from Command Line using Vagrant</title>
-   <link href="http://username.github.com/2012/04/13/provisioning-a-vm-from-command-line-using-vagrant"/>
+   <link href="http://vbajpai.github.com/blog/2012/04/13/provisioning-a-vm-from-command-line-using-vagrant"/>
    <updated>2012-04-13T00:00:00+02:00</updated>
-   <id>http://username.github.com/2012/04/13/provisioning-a-vm-from-command-line-using-vagrant</id>
+   <id>http://vbajpai.github.com/blog/2012/04/13/provisioning-a-vm-from-command-line-using-vagrant</id>
    <content type="html">&lt;p&gt;&lt;img alt='vagrant logo' src='http://ajohnstone.com/wp-content/uploads/2011/12/vagrant_chilling.png' /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -163,9 +163,9 @@ config.vm.forward_port 80, 8080	&lt;/code&gt;&lt;/pre&gt;
  
  <entry>
    <title>OS X for Hackers</title>
-   <link href="http://username.github.com/2012/03/31/os-x-for-hackers"/>
+   <link href="http://vbajpai.github.com/blog/2012/03/31/os-x-for-hackers"/>
    <updated>2012-03-31T00:00:00+02:00</updated>
-   <id>http://username.github.com/2012/03/31/os-x-for-hackers</id>
+   <id>http://vbajpai.github.com/blog/2012/03/31/os-x-for-hackers</id>
    <content type="html">&lt;p&gt;I found some useful tips from &lt;a href='https://gist.github.com/2260182'&gt;OSX for Hackers &amp;#8594;&lt;/a&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;echo &amp;quot;Enable subpixel font rendering on non-Apple LCDs&amp;quot;
@@ -180,9 +180,9 @@ defaults write com.apple.finder FXDefaultSearchScope -string &amp;quot;SCcf&amp;
  
  <entry>
    <title>Parsing JSON using json c</title>
-   <link href="http://username.github.com/2012/03/23/parsing-json-using-json-c"/>
+   <link href="http://vbajpai.github.com/blog/2012/03/23/parsing-json-using-json-c"/>
    <updated>2012-03-23T00:00:00+01:00</updated>
-   <id>http://username.github.com/2012/03/23/parsing-json-using-json-c</id>
+   <id>http://vbajpai.github.com/blog/2012/03/23/parsing-json-using-json-c</id>
    <content type="html">&lt;p&gt;Install &lt;code&gt;json-c&lt;/code&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ brew install json-c&lt;/code&gt;&lt;/pre&gt;
@@ -223,9 +223,9 @@ char* json_object_get_string(struct json_object*);
  
  <entry>
    <title>MySQL on Mac OS X</title>
-   <link href="http://username.github.com/2012/02/26/mysql-on-mac-os-x"/>
+   <link href="http://vbajpai.github.com/blog/2012/02/26/mysql-on-mac-os-x"/>
    <updated>2012-02-26T00:00:00+01:00</updated>
-   <id>http://username.github.com/2012/02/26/mysql-on-mac-os-x</id>
+   <id>http://vbajpai.github.com/blog/2012/02/26/mysql-on-mac-os-x</id>
    <content type="html">&lt;p&gt;Install MySQL using Homebrew&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ brew install mysql&lt;/code&gt;&lt;/pre&gt;
@@ -256,9 +256,9 @@ mysql&amp;gt; 		&lt;/code&gt;&lt;/pre&gt;
  
  <entry>
    <title>Git and opendiff since XCode 4.3</title>
-   <link href="http://username.github.com/2012/02/22/git-and-opendiff-since-xcode-43"/>
+   <link href="http://vbajpai.github.com/blog/2012/02/22/git-and-opendiff-since-xcode-43"/>
    <updated>2012-02-22T00:00:00+01:00</updated>
-   <id>http://username.github.com/2012/02/22/git-and-opendiff-since-xcode-43</id>
+   <id>http://vbajpai.github.com/blog/2012/02/22/git-and-opendiff-since-xcode-43</id>
    <content type="html">&lt;p&gt;Apple released Xcode 4.3 on February 16, 2012.&lt;/p&gt;
 
 &lt;p&gt;Xcode 4.3 now bundles as a single app and recommends to remove older versions of Xcode during the installation. The &lt;code&gt;/Developer&lt;/code&gt; directory is eliminated in the process. As a result, &lt;code&gt;git&lt;/code&gt; using &lt;code&gt;opendiff&lt;/code&gt; to will no longer work after the installation.&lt;/p&gt;
@@ -284,9 +284,9 @@ $ gd $SOURCE&lt;/code&gt;&lt;/pre&gt;
  
  <entry>
    <title>Python Ecosystem on Mac OS X</title>
-   <link href="http://username.github.com/2012/02/20/python-ecosystem-on-mac-os-x"/>
+   <link href="http://vbajpai.github.com/blog/2012/02/20/python-ecosystem-on-mac-os-x"/>
    <updated>2012-02-20T00:00:00+01:00</updated>
-   <id>http://username.github.com/2012/02/20/python-ecosystem-on-mac-os-x</id>
+   <id>http://vbajpai.github.com/blog/2012/02/20/python-ecosystem-on-mac-os-x</id>
    <content type="html">&lt;p&gt;Install Homebrew and Prioritize it&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ ruby -e &amp;quot;$(curl -fsS https://raw.github.com/gist/323731)&amp;quot;
@@ -386,9 +386,9 @@ $ rmvirtualenv foo&lt;/code&gt;&lt;/pre&gt;
  
  <entry>
    <title>Konica Minolta Network Printers on Mac OS X</title>
-   <link href="http://username.github.com/2011/10/27/konica-minolta-network-printers-on-mac-os-x"/>
+   <link href="http://vbajpai.github.com/blog/2011/10/27/konica-minolta-network-printers-on-mac-os-x"/>
    <updated>2011-10-27T00:00:00+02:00</updated>
-   <id>http://username.github.com/2011/10/27/konica-minolta-network-printers-on-mac-os-x</id>
+   <id>http://vbajpai.github.com/blog/2011/10/27/konica-minolta-network-printers-on-mac-os-x</id>
    <content type="html">&lt;p&gt;Jacobs University Bremen &lt;a href='https://teamwork.jacobs-university.de:8443/confluence/display/ircit/2011/10/24/Replacement+of+network+printers'&gt;replaced&lt;/a&gt; its network printers on October 27, 2011.&lt;br /&gt;Here are the steps to setup the new Konica Minolta Multi Function Printers:&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt='' src='http://www.konicaminolta.com.au/library/bizhub_652_enlarge_a.jpg' /&gt;&lt;/p&gt;
@@ -416,9 +416,9 @@ $ rmvirtualenv foo&lt;/code&gt;&lt;/pre&gt;
  
  <entry>
    <title>Exporting a Mercurial Repository to Git</title>
-   <link href="http://username.github.com/2011/10/16/exporting-a-mercurial-repository-to-git"/>
+   <link href="http://vbajpai.github.com/blog/2011/10/16/exporting-a-mercurial-repository-to-git"/>
    <updated>2011-10-16T00:00:00+02:00</updated>
-   <id>http://username.github.com/2011/10/16/exporting-a-mercurial-repository-to-git</id>
+   <id>http://vbajpai.github.com/blog/2011/10/16/exporting-a-mercurial-repository-to-git</id>
    <content type="html">&lt;p&gt;Clone &lt;a href='http://repo.or.cz/w/fast-export.git'&gt;hg-fast-export &amp;#8594;&lt;/a&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ git clone git://repo.or.cz/fast-export.git&lt;/code&gt;&lt;/pre&gt;
@@ -442,9 +442,9 @@ $ rmvirtualenv foo&lt;/code&gt;&lt;/pre&gt;
  
  <entry>
    <title>Dropbox on Ubuntu Server</title>
-   <link href="http://username.github.com/2011/10/10/dropbox-on-ubuntu-server"/>
+   <link href="http://vbajpai.github.com/blog/2011/10/10/dropbox-on-ubuntu-server"/>
    <updated>2011-10-10T00:00:00+02:00</updated>
-   <id>http://username.github.com/2011/10/10/dropbox-on-ubuntu-server</id>
+   <id>http://vbajpai.github.com/blog/2011/10/10/dropbox-on-ubuntu-server</id>
    <content type="html">&lt;p&gt;Download the latest tarball: &lt;a href='http://www.dropbox.com/download/?plat=lnx.x86'&gt;x86&lt;/a&gt; or &lt;a href='http://www.dropbox.com/download/?plat=lnx.x86_64'&gt;x86-64&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Extract the tarball and relocate it.&lt;/p&gt;
@@ -511,9 +511,9 @@ Idle&lt;/code&gt;&lt;/pre&gt;</content>
  
  <entry>
    <title>zsh on Ubuntu</title>
-   <link href="http://username.github.com/2011/09/12/zsh-on-ubuntu"/>
+   <link href="http://vbajpai.github.com/blog/2011/09/12/zsh-on-ubuntu"/>
    <updated>2011-09-12T00:00:00+02:00</updated>
-   <id>http://username.github.com/2011/09/12/zsh-on-ubuntu</id>
+   <id>http://vbajpai.github.com/blog/2011/09/12/zsh-on-ubuntu</id>
    <content type="html">&lt;p&gt;Check your current shell:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ echo $SHELL&lt;/code&gt;&lt;/pre&gt;
@@ -535,9 +535,9 @@ Idle&lt;/code&gt;&lt;/pre&gt;</content>
  
  <entry>
    <title>Slam6D on Mac OS X</title>
-   <link href="http://username.github.com/2011/08/12/slam6d-on-mac-os-x"/>
+   <link href="http://vbajpai.github.com/blog/2011/08/12/slam6d-on-mac-os-x"/>
    <updated>2011-08-12T00:00:00+02:00</updated>
-   <id>http://username.github.com/2011/08/12/slam6d-on-mac-os-x</id>
+   <id>http://vbajpai.github.com/blog/2011/08/12/slam6d-on-mac-os-x</id>
    <content type="html">&lt;p&gt;Prepare for Homebrew&lt;/p&gt;
 
 &lt;ul&gt;
@@ -579,9 +579,9 @@ Idle&lt;/code&gt;&lt;/pre&gt;</content>
  
  <entry>
    <title>Git rebase in Mercurial</title>
-   <link href="http://username.github.com/2011/08/11/git-rebase-in-mercurial"/>
+   <link href="http://vbajpai.github.com/blog/2011/08/11/git-rebase-in-mercurial"/>
    <updated>2011-08-11T00:00:00+02:00</updated>
-   <id>http://username.github.com/2011/08/11/git-rebase-in-mercurial</id>
+   <id>http://vbajpai.github.com/blog/2011/08/11/git-rebase-in-mercurial</id>
    <content type="html">&lt;p&gt;The scenario is to rebase the commits of your feature branch on top of the newer updates from master branch: To achieve it in &lt;code&gt;git&lt;/code&gt;:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;[master] $ git checkout feature
@@ -601,9 +601,9 @@ rebase = &lt;/code&gt;&lt;/pre&gt;
  
  <entry>
    <title>Removing Tracked Content from an Updated .hgignore</title>
-   <link href="http://username.github.com/2011/07/30/removing-tracked-content-from-an-updated-hgignore"/>
+   <link href="http://vbajpai.github.com/blog/2011/07/30/removing-tracked-content-from-an-updated-hgignore"/>
    <updated>2011-07-30T00:00:00+02:00</updated>
-   <id>http://username.github.com/2011/07/30/removing-tracked-content-from-an-updated-hgignore</id>
+   <id>http://vbajpai.github.com/blog/2011/07/30/removing-tracked-content-from-an-updated-hgignore</id>
    <content type="html">&lt;p&gt;A change in the &lt;code&gt;.hgignore&lt;/code&gt; file does NOT automatically remove the currently tracked items from the &lt;code&gt;hg&lt;/code&gt; repository. A manual &lt;code&gt;$ hg remove&lt;/code&gt; is required. However if the recent ignore pattern involves several files kept in fragmented place of the repository, a manual remove may involve some work. Mercurial&amp;#8217; support for a functional language to select a set of files comes to the rescue and it even has a special predicate to specify the current &lt;code&gt;.hgignore&lt;/code&gt; file pattern to get this done in one simple command -&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ hg remove -f &amp;quot;set:hgignore()&amp;quot;&lt;/code&gt;&lt;/pre&gt;</content>
@@ -611,9 +611,9 @@ rebase = &lt;/code&gt;&lt;/pre&gt;
  
  <entry>
    <title>Installing TextMate Bundles</title>
-   <link href="http://username.github.com/2011/07/02/installing-textmate-bundles"/>
+   <link href="http://vbajpai.github.com/blog/2011/07/02/installing-textmate-bundles"/>
    <updated>2011-07-02T00:00:00+02:00</updated>
-   <id>http://username.github.com/2011/07/02/installing-textmate-bundles</id>
+   <id>http://vbajpai.github.com/blog/2011/07/02/installing-textmate-bundles</id>
    <content type="html">&lt;p&gt;Create the Bundles Directory&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ mkdir -p /Library/Application\ Support/TextMate/Bundles&lt;/code&gt;&lt;/pre&gt;
@@ -625,9 +625,9 @@ rebase = &lt;/code&gt;&lt;/pre&gt;
  
  <entry>
    <title>Git diffs with Mac OS X FileMerge</title>
-   <link href="http://username.github.com/2011/06/25/git-diffs-with-mac-os-x-filemerge"/>
+   <link href="http://vbajpai.github.com/blog/2011/06/25/git-diffs-with-mac-os-x-filemerge"/>
    <updated>2011-06-25T00:00:00+02:00</updated>
-   <id>http://username.github.com/2011/06/25/git-diffs-with-mac-os-x-filemerge</id>
+   <id>http://vbajpai.github.com/blog/2011/06/25/git-diffs-with-mac-os-x-filemerge</id>
    <content type="html">&lt;p&gt;Add a function for &lt;code&gt;git difftool&lt;/code&gt; in your &lt;code&gt;.zshrc&lt;/code&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;gd () {
@@ -641,9 +641,9 @@ rebase = &lt;/code&gt;&lt;/pre&gt;
  
  <entry>
    <title>Mercurial diffs with Mac OS X FileMerge</title>
-   <link href="http://username.github.com/2011/06/24/mercurial-diffs-with-mac-os-x-filemerge"/>
+   <link href="http://vbajpai.github.com/blog/2011/06/24/mercurial-diffs-with-mac-os-x-filemerge"/>
    <updated>2011-06-24T00:00:00+02:00</updated>
-   <id>http://username.github.com/2011/06/24/mercurial-diffs-with-mac-os-x-filemerge</id>
+   <id>http://vbajpai.github.com/blog/2011/06/24/mercurial-diffs-with-mac-os-x-filemerge</id>
    <content type="html">&lt;p&gt;Create &lt;code&gt;opendiff-w&lt;/code&gt; script in &lt;code&gt;/usr/bin&lt;/code&gt;:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;#!/bin/sh
@@ -679,9 +679,9 @@ filemerge.args = $local $other -ancestor $base -merge $output         &lt;/code&
  
  <entry>
    <title>WPA on Ubuntu Server</title>
-   <link href="http://username.github.com/2011/06/16/wpa-on-ubuntu-server"/>
+   <link href="http://vbajpai.github.com/blog/2011/06/16/wpa-on-ubuntu-server"/>
    <updated>2011-06-16T00:00:00+02:00</updated>
-   <id>http://username.github.com/2011/06/16/wpa-on-ubuntu-server</id>
+   <id>http://vbajpai.github.com/blog/2011/06/16/wpa-on-ubuntu-server</id>
    <content type="html">&lt;p&gt;Find your network&amp;#8217;s PSK string&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ wpa_passphrase $SSID $PSK&lt;/code&gt;&lt;/pre&gt;
@@ -720,9 +720,9 @@ post-down killall -q wpa_supplicant&lt;/code&gt;&lt;/pre&gt;
  
  <entry>
    <title>Rasdaman on Ubuntu</title>
-   <link href="http://username.github.com/2011/06/12/rasdaman-on-ubuntu"/>
+   <link href="http://vbajpai.github.com/blog/2011/06/12/rasdaman-on-ubuntu"/>
    <updated>2011-06-12T00:00:00+02:00</updated>
-   <id>http://username.github.com/2011/06/12/rasdaman-on-ubuntu</id>
+   <id>http://vbajpai.github.com/blog/2011/06/12/rasdaman-on-ubuntu</id>
    <content type="html">&lt;blockquote&gt;
 &lt;p&gt;rasdaman is a universal, domain-independent, array&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -803,9 +803,9 @@ $ bash start_rasdaman.sh&lt;/code&gt;&lt;/pre&gt;
  
  <entry>
    <title>Basic Graph Plots in MATLAB</title>
-   <link href="http://username.github.com/2010/11/14/basic-graph-plots-in-matlab"/>
+   <link href="http://vbajpai.github.com/blog/2010/11/14/basic-graph-plots-in-matlab"/>
    <updated>2010-11-14T00:00:00+01:00</updated>
-   <id>http://username.github.com/2010/11/14/basic-graph-plots-in-matlab</id>
+   <id>http://vbajpai.github.com/blog/2010/11/14/basic-graph-plots-in-matlab</id>
    <content type="html">&lt;p&gt;Plot &lt;code&gt;x[1]&lt;/code&gt; v &lt;code&gt;x[2]&lt;/code&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;plot(x(:,1), x(:,2)&lt;/code&gt;&lt;/pre&gt;
@@ -830,17 +830,17 @@ ylabel(&amp;#39;bar&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
  
  <entry>
    <title>OpenXML fonts on Mac OS X</title>
-   <link href="http://username.github.com/2010/11/13/openxml-fonts-on-mac-os-x"/>
+   <link href="http://vbajpai.github.com/blog/2010/11/13/openxml-fonts-on-mac-os-x"/>
    <updated>2010-11-13T00:00:00+01:00</updated>
-   <id>http://username.github.com/2010/11/13/openxml-fonts-on-mac-os-x</id>
+   <id>http://vbajpai.github.com/blog/2010/11/13/openxml-fonts-on-mac-os-x</id>
    <content type="html">&lt;p&gt;Download Open XML File Format Converter for Mac from &lt;a href='http://www.microsoft.com/mac/downloads'&gt;Mactopia →&lt;/a&gt;&lt;br /&gt;Install &lt;code&gt;.../Contents/Packages/OpenXML_all_fonts.pkg&lt;/code&gt;&lt;/p&gt;</content>
  </entry>
  
  <entry>
    <title>ns2 on Ubuntu</title>
-   <link href="http://username.github.com/2010/11/02/ns2-on-ubuntu"/>
+   <link href="http://vbajpai.github.com/blog/2010/11/02/ns2-on-ubuntu"/>
    <updated>2010-11-02T00:00:00+01:00</updated>
-   <id>http://username.github.com/2010/11/02/ns2-on-ubuntu</id>
+   <id>http://vbajpai.github.com/blog/2010/11/02/ns2-on-ubuntu</id>
    <content type="html">&lt;p&gt;Add &lt;a href='https://launchpad.net/~wouterh/+archive/ppa'&gt;Wouter Horré&amp;#8217;s&lt;/a&gt; PPA&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;deb http://ppa.launchpad.net/wouterh/ppa/ubuntu YOUR_UBUNTU_VERSION_HERE main 
@@ -853,17 +853,25 @@ deb-src http://ppa.launchpad.net/wouterh/ppa/ubuntu YOUR_UBUNTU_VERSION_HERE mai
  
  <entry>
    <title>ns2 on Mac OS X</title>
-   <link href="http://username.github.com/2010/11/02/ns2-on-mac-os-x"/>
+   <link href="http://vbajpai.github.com/blog/2010/11/02/ns2-on-mac-os-x"/>
    <updated>2010-11-02T00:00:00+01:00</updated>
-   <id>http://username.github.com/2010/11/02/ns2-on-mac-os-x</id>
-   <content type="html">&lt;p&gt;Download the precompiled &lt;a href='https://github.com/downloads/vbajpai/vbajpai.github.com/ns2-2.34.pkg'&gt;binary →&lt;/a&gt;&lt;/p&gt;</content>
+   <id>http://vbajpai.github.com/blog/2010/11/02/ns2-on-mac-os-x</id>
+   <content type="html">&lt;p&gt;Download the precompiled &lt;a href='https://github.com/downloads/vbajpai/blog/ns2-2.34.pkg'&gt;binary →&lt;/a&gt;&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>flow tools on Mac OS X</title>
+   <link href="http://vbajpai.github.com/blog/2010/11/02/flow-tools-on-mac-os-x"/>
+   <updated>2010-11-02T00:00:00+01:00</updated>
+   <id>http://vbajpai.github.com/blog/2010/11/02/flow-tools-on-mac-os-x</id>
+   <content type="html">&lt;p&gt;Download the precompiled &lt;a href='https://github.com/downloads/vbajpai/blog/flow-tools-fprobe.mpkg'&gt;binary →&lt;/a&gt;&lt;/p&gt;</content>
  </entry>
  
  <entry>
    <title>Gathering For Gardner</title>
-   <link href="http://username.github.com/2010/10/04/gathering-for-gardner"/>
+   <link href="http://vbajpai.github.com/blog/2010/10/04/gathering-for-gardner"/>
    <updated>2010-10-04T00:00:00+02:00</updated>
-   <id>http://username.github.com/2010/10/04/gathering-for-gardner</id>
+   <id>http://vbajpai.github.com/blog/2010/10/04/gathering-for-gardner</id>
    <content type="html">&lt;p&gt;The Gathering for Gardner Dragon is an example of Hollow Face Illusion in which the concave (hollow) face appears to be convex. Human beings have a strong bias towards convex shapes, so much so that they overcome lightening, shadow and stereoscopic cues. This is the reason why the illusion is more pronounced when one eye is closed or using a camera lens. The bias towards convex face is because of the strong connectivity between top and bottom parts of our brain and how the top part can sometimes dominate the bottom part. The bottom part is responsible for capturing sensory information and the top part for processing that information. In this example, when we move around to see the object from different angles, the top part uses the past learning experience to create a hypothesis which overpowers the actual sensory data received from the bottom part making us believe the object is staring at us.&lt;/p&gt;
 &lt;iframe frameborder='0' height='315' src='http://www.youtube.com/embed/ChdUtBxyieo' width='560'&gt;
 &lt;/iframe&gt;</content>
@@ -871,9 +879,9 @@ deb-src http://ppa.launchpad.net/wouterh/ppa/ubuntu YOUR_UBUNTU_VERSION_HERE mai
  
  <entry>
    <title>Image Morphing using xmorph</title>
-   <link href="http://username.github.com/2010/10/02/image-morphing-using-xmorph"/>
+   <link href="http://vbajpai.github.com/blog/2010/10/02/image-morphing-using-xmorph"/>
    <updated>2010-10-02T00:00:00+02:00</updated>
-   <id>http://username.github.com/2010/10/02/image-morphing-using-xmorph</id>
+   <id>http://vbajpai.github.com/blog/2010/10/02/image-morphing-using-xmorph</id>
    <content type="html">&lt;iframe frameborder='0' height='315' src='http://www.youtube.com/embed/RMlR5Ogi7UM' width='420'&gt;
 &lt;/iframe&gt;
 &lt;p&gt;&lt;a href='http://xmorph.sourceforge.net/'&gt;xmorph &amp;#8594;&lt;/a&gt;&lt;/p&gt;</content>
