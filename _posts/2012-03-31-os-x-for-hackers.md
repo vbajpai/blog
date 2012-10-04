@@ -1,4 +1,4 @@
----
+[[---]]
 layout: post
 title: "OS X for Hackers"
 description: ""
@@ -16,3 +16,9 @@ I found some useful tips from [OSX for Hackers &rarr;](https://gist.github.com/2
     
 	echo "Use current directory as default search scope in Finder"
 	defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"    
+
+    echo "Override default fonts and font sizes in WebKit"
+    defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2StandardFontFamily Georgia
+    defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DefaultFontSize 16
+    defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2FixedFontFamily Menlo
+    defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DefaultFixedFontSize 14
