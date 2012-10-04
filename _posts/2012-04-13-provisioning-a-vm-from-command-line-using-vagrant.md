@@ -20,12 +20,12 @@ Install [Oracle VirtualBox &rarr;](https://www.virtualbox.org/wiki/Downloads)
 
 Install [Vagrant &rarr;](http://downloads.vagrantup.com/)
 
-Add a [Base Box &rarr;](http://vagrantbox.es/)
+Add a [Base Box &rarr;](http://vagrantbox.es/) (or try [Artisan of Code &rarr;](http://artisanofcode.com/projects/vagrant-boxes))  
 
 	@local: $ vagrant box add $BOXNAME $BOXURL
 	
 where `$BOXNAME` is a box name and `$BOXURL` is a url to a `.box` file.  
-The boxes are saved in `~/.vagrant.d/boxes`
+The boxes are saved in `~/.vagrant.d/boxes`  
 	
 [Additional Commands] List and/or Remove boxes:
 	
