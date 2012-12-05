@@ -8,11 +8,11 @@ tags: []
 {% include JB/setup %}
 
 I have decided to perform most of the computation intensive tasks on our
-server rack. I have a VM provisioned on this rack. Since the VM is
-running an old version of Debian build, I want to keep this build
-minimal and work on projects on a VM running bleeding edge Ubuntu Server
-provisioned by Vagrant. I started looking into ways to run Vagrant on a
-headless Debian build, and it looks quite straightforward.
+university server rack. I have a VM provisioned on this rack. Since the
+VM is running an old version of Debian build, I want to keep this build
+minimal and work on projects on a separate VM running a bleeding edge
+Ubuntu Server provisioned by Vagrant. I started looking into ways to run
+Vagrant on a headless Debian build, and it looks quite straightforward.
 
 
 Install Virtualbox
