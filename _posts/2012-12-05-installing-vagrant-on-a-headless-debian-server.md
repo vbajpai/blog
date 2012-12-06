@@ -16,8 +16,11 @@ Vagrant on a headless Debian build, and it looks quite straightforward.
 
 
 Install Virtualbox
-
+    
+    $ sudo apt-get install linux-headers-$(uname -r)
+    $ sudo apt-get install virtualbox-ose-dkms
     $ sudo apt-get install virtualbox-ose
+    $ sudo service virtualbox-ose start
 
 Setup a Ruby Environment
 
