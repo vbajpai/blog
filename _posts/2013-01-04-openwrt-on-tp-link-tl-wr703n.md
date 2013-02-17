@@ -7,6 +7,8 @@ tags: []
 ---
 {% include JB/setup %}
 
+![Router](http://farm9.staticflickr.com/8023/7290281108_681526b3fe.jpg)
+
 OpenWRT is an operating system primarily used on embedded devices to
 route network traffic. The main components are the Linux kernel, uClibc
 and BusyBox. All components have been optimized for size, to be small
