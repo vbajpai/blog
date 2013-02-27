@@ -20,12 +20,11 @@ Install Virtualbox
     $ sudo apt-get install linux-headers-$(uname -r)
     $ sudo apt-get install virtualbox-ose-dkms
     $ sudo apt-get install virtualbox-ose
-    $ sudo service virtualbox-ose start
+    $ sudo service virtualbox start
 
 Setup a Ruby Environment
 
-    $ sudo apt-get install ruby
-    $ sudo apt-get install rubygems
+    $ sudo apt-get install ruby ruby-dev rubygems
 
 Install Vagrant as a Ruby gem
 
