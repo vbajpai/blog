@@ -23,6 +23,7 @@ available for install via the `opkg` package management system.
 	- [Introspecting stock OpenWRT build](#introspecting-stock-openwrt)
 	- [Enable Wireless (Client Mode)](#enable-wireless-client-mode)
 	- [Update the Packages](#update-the-packages)
+	- [Update the TimeZone](#update-the-timezone)
 	- [Create a Pseudobridge with LAN interface](#create-a-pseudobridge)
   - [Add USB Support](#add-usb-support)
   - [Pivot-Overlay on a USB disk](#pivot-overlay-on-a-usb-disk)
@@ -47,7 +48,7 @@ available for install via the `opkg` package management system.
 
 Once the OpenWRT setup is complete, it should be possible to cherry-pick the components one wishes to install.
  
-### <a id="planned-setup"></a>Planned Setup
+### <a id="planned-setup">Planned Setup</a>
 <hr/>
 
 ![Imgur](http://i.imgur.com/YjPE5.jpg)
@@ -68,7 +69,7 @@ reach them from the outside world. We will also assign DNS names to the
 us to backup our hosts from anywhere and everywhere, given we use
 `miredo` to get a IPv6 address at places we don't get native IPv6.
 
-#### <a id="installing-openwrt"></a>Installing OpenWRT  
+#### <a id="installing-openwrt">Installing OpenWRT</a>
 <hr/>
 
 
@@ -136,7 +137,7 @@ failsafe mode using the hardware RESET button (2). This assumes that the
 `squashfs` partition or the kernel is not broken (3).
 
 
-#### <a id="introspecting-stock-openwrt"></a>Introspecting stock OpenWRT build
+#### <a id="introspecting-stock-openwrt">Introspecting stock OpenWRT build</a>
 <hr/>
 
 The snapshot runs linux kernel `v3.6.11`.
@@ -228,7 +229,7 @@ The device has `4M` of flash and `32M` of RAM. It appears I have `1.1M`
 of flash and `14.1M` of RAM at my disposal after stock openWRT
 installation.
 
-#### <a id="enable-wireless-client-mode"></a>Enable Wireless (Client Mode)
+#### <a id="enable-wireless-client-mode">Enable Wireless (Client Mode)</a>
 <hr/>
 
 Enable wireless radio
@@ -293,7 +294,7 @@ Restart the Network
 
 If the the resource is busy, a reboot will fix it.
 
-#### <a id="update-the-packages"></a>Update the Packages
+#### <a id="update-the-packages">Update the Packages</a>
 <hr/>
 
 `opkg` is the OpenWRT package management system. 
@@ -316,7 +317,10 @@ pivot overlay, which mounts the whole `/overlay` to an external USB
 disk. We will do this later.
 
 
-#### <a id="create-a-pseudobridge"></a>Create a Pseudobridge with LAN interface
+#### <a id="update-the-timezone">Update the TimeZone</a>
+<hr/>
+
+#### <a id="create-a-pseudobridge">Create a Pseudobridge with LAN interface</a>
 <hr/>
 
 The atheros wireless drivers do not support bridging the wireless
@@ -368,7 +372,7 @@ Apply the changes
 
 If the resource is busy, a reboot will fix it.
 
-### <a id="add-usb-support"></a>Add USB Support
+### <a id="add-usb-support">Add USB Support</a>
 <hr/>
 
 Confirm basic USB support
@@ -414,7 +418,7 @@ Install package to support mounting block devices.
 
 The package is required to setup a `fstab` configuration.
 
-### <a id="pivot-overlay-on-a-usb-disk"></a>Pivot-Overlay on a USB disk
+### <a id="pivot-overlay-on-a-usb-disk">Pivot-Overlay on a USB disk</a>
 <hr/>
 
 The available disk space on `/overlay` is now less than a `1M`. It is
@@ -527,7 +531,7 @@ Good to have some breathing space! It's currently unclear to me if a
 `sysupgrade` needs to be handled any differently now. I will try to
 avoid it until I am sure.
 
-### <a id="setup-time-capsule"></a>Setup Time Capsule 
+### <a id="setup-time-capsule">Setup Time Capsule</a>
 <hr/>
 
 The router provides only 1 USB port, which is now used by the USB disk
@@ -651,7 +655,7 @@ Finally the backup has started:
 
 ![Imgur](http://i.imgur.com/Q1MrY.png)
 
-### <a id="secure-remote-acess"></a>Secure Remote Acess.
+### <a id="secure-remote-acess">Secure Remote Acess.</a>
 <hr/>
 
 Use Public-Key Authentication
@@ -676,7 +680,7 @@ Setup a SSH config on the clients
 
 We will later update it with global-scope IPv6 addresses.
 
-### <a id="enable-ipv6-support"></a>Enable IPv6 Support
+### <a id="enable-ipv6-support">Enable IPv6 Support</a>
 <hr/>
 
 Install IPv6 kernel module
@@ -804,7 +808,7 @@ MAC address with the static routed prefix. Unless privacy extensions are
 enabled, the IPv6 addresses generated is slated to remain static
 (globally) static for a host, which can bring good and bad news.
 
-### <a id="replace-ash-with-bash"></a>Replace `ash` with `bash`
+### <a id="replace-ash-with-bash">Replace `ash` with `bash`</a>
 <hr/>
 
 `bash` provides more capabilities over `ash`
@@ -817,7 +821,7 @@ enabled, the IPv6 addresses generated is slated to remain static
 
 You may have to exit and ssh back again for changes to take effect.
 
-### <a id="replace-dropbear-with-openssh"></a>Replace `dropbear` with `openssh`
+### <a id="replace-dropbear-with-openssh">Replace `dropbear` with `openssh`</a>
 <hr/>
 
 Switch `dropbear` running instance to a different port
@@ -858,7 +862,7 @@ Install `openssh-client`
 
 You can now disable dropbear to save some RAM
 
-### <a id="supercharge-/tmp"></a>Supercharge `/tmp`
+### <a id="supercharge-/tmp">Supercharge `/tmp`</a>
 <hr/>
 
 The `tmpfs` partition is restricted to 50% of the RAM. It would be great
@@ -918,7 +922,7 @@ Create a mount point to put `/tmp`
     (openWRT) # uci set fstab.@mount[3].enabled=1
     (openWRT) # uci set fstab.@mount[3].enabled_fsck=1
 
-### <a id="unlink-/var-from-/tmp"></a>Unlink `/var` from `/tmp`
+### <a id="unlink-/var-from-/tmp">Unlink `/var` from `/tmp`</a>
 <hr/>
 
 `\var` is set a symbolic link to `\tmp` by default. This means, `opkg`
@@ -939,7 +943,7 @@ Create a new symbolic link
     (openWRT) # rm /var
     (openWRT) # ln -s /mnt/var /var
 
-### <a id="create-a-separate-user"></a>Create a separate user
+### <a id="create-a-separate-user">Create a separate user</a>
 <hr/>
 
 Connect a USB drive for `/home`
@@ -1002,7 +1006,7 @@ Set a better TERM
 
 This is will be required for `vim` and `tmux`
 
-### <a id="install-development-tools"></a>Install development tools
+### <a id="install-development-tools">Install development tools</a>
 <hr/>
 
 This is my personal choice of tools
@@ -1013,11 +1017,11 @@ This is my personal choice of tools
 
 Some people would prefer to install `emacs`
 
-### <a id="assign-dns-names-to-ipv6-hosts"></a>Assign DNS names to IPv6 Hosts
+### <a id="assign-dns-names-to-ipv6-hosts">Assign DNS names to IPv6 Hosts</a>
 <hr/>
 
 
-### <a id="enable-usb-tethering-support"></a>Enable USB Tethering support
+### <a id="enable-usb-tethering-support">Enable USB Tethering support</a>
 <hr/>
 
 The router can be used as bridge to connect resource constrained
@@ -1034,25 +1038,25 @@ Install `rndis` support.
 
     (openWRT) $ sudo opkg install kmod-usb-net-rndis
 
-### <a id="local-dns-using-dnsmasq"></a>Local DNS using `dnsmasq`
+### <a id="local-dns-using-dnsmasq">Local DNS using `dnsmasq`</a>
 <hr/>
 
-### <a id="static-dhcp-assignments"></a>Static DHCP Assignments
+### <a id="static-dhcp-assignments">Static DHCP Assignments</a>
 <hr/>
 
-### <a id="setup-openvpn"></a>Setup OpenVPN
+### <a id="setup-openvpn">Setup OpenVPN</a>
 <hr/>
 
-### <a id="capture-network-flows"></a>Capture Network Flows
+### <a id="capture-network-flows">Capture Network Flows</a>
 <hr/>
 
-### <a id="cacti-network-visualization"></a>Cacti Network Visualization
+### <a id="cacti-network-visualization">Cacti Network Visualization</a>
 <hr/>
 
-### <a id="asterisks"></a>Asterisks
+### <a id="asterisks">Asterisks</a>
 <hr/>
 
-### <a id="cisco-vpn"></a>Cisco VPN
+### <a id="cisco-vpn">Cisco VPN</a>
 <hr/>
 
 (0) [DD-WRT: Client Bridged &rarr;](http://www.dd-wrt.com/wiki/index.php/Client_Bridged)  
