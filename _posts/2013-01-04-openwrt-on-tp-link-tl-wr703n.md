@@ -31,6 +31,7 @@ available for install via the `opkg` package management system.
   - [Secure Remote Acess.](#secure-remote-acess)
   - [Enable IPv6 Support](#enable-ipv6-support)
   - [Replace `ash` with `bash`](#replace-ash-with-bash)
+  - [Replace `bash` with `zsh`](#replace-bash-with-zsh)
   - [Replace `dropbear` with `openssh`](#replace-dropbear-with-openssh)
   - [Supercharge `/tmp`](#supercharge-/tmp)
   - [Unlink `/var` from `/tmp`](#unlink-/var-from-/tmp)
@@ -821,6 +822,19 @@ enabled, the IPv6 addresses generated is slated to remain static
 
 You may have to exit and ssh back again for changes to take effect.
 
+### <a id="replace-bash-with-zsh">Replace `bash` with `zsh`</a>
+<hr/>
+
+I personally prefer `zsh` over `bash`.
+
+    (openWRT) # opkg update
+    (openWRT) # opkg install zsh
+    (openWRT) # vi /etc/passwd
+    - root:x:0:0:root:/root:/bin/bash
+    + root:x:0:0:root:/root:/bin/zsh
+
+You may have to exit and ssh back again for changes to take effect.
+
 ### <a id="replace-dropbear-with-openssh">Replace `dropbear` with `openssh`</a>
 <hr/>
 
@@ -961,7 +975,7 @@ Stop using root
 
     (openWRT) # mkdir -p /mnt/home/vbajpai
     (openWRT) # vi /etc/passwd
-    vbajpai:xxx:1000:1000:vbajpai:/mnt/home/vbajpai:/bin/bash
+    vbajpai:xxx:1000:1000:vbajpai:/mnt/home/vbajpai:/bin/zsh
     ...
     (openWRT) # vi /etc/group
     ...
