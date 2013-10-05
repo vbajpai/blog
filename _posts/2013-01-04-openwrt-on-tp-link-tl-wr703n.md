@@ -46,6 +46,8 @@ available for install via the `opkg` package management system.
   - [Cacti Network Visualization](#cacti-network-visualization)
   - [Asterisks](#asterisks)
   - [Cisco VPN](#cisco-vpn)
+  - [Setup Print Server](#setup-print-server)
+  - [IPv6 Relay](#ipv6-relay)
 
 Once the OpenWRT setup is complete, it should be possible to cherry-pick the components one wishes to install.
  
@@ -1072,6 +1074,53 @@ Install `rndis` support.
 
 ### <a id="cisco-vpn">Cisco VPN</a>
 <hr/>
+
+### <a id="setup-print-server">Setup Print Server</a>
+<hr/>
+
+Install `cups`
+
+    # opkg install cups
+
+Change the spool directory. Point it to a location which has higher disk
+space.
+
+    # vim /etc/cups/cupsd.conf
+    - RequestRoot /var/cups
+    + RequestRoot /mnt/var/cups
+
+Start `cups`
+
+    # /etc/init.d/cupsd enable
+    # /etc/init.d/cupsd start
+
+The web interface should now be available at port `631`
+
+### <a id="ipv6-relay">IPv6 Relay</a>
+<hr/>
+
+I recently started receiving native IPv6 connectivity from my ISP. My
+ISP provides me a /64 prefix over a logical link. However, no routed
+subnet prefix is provided. In order to provide IPv6 connectivity to some
+of my downstream hosts, I had to relay IPv6 router advertisements from
+my CPE through my OpenWrt router. I used `6relayd` for this:
+
+    # opkg install 6relayd
+
+The configurations were set as follows:
+
+    # cat /etc/config/6relayd
+    config server examplerelay
+            option master   'wwan'
+            option network  'lan'
+            option rd       'relay'
+            option dhcpv6   'relay'
+            option ndp      'relay'
+
+Restart and enable 6relayd:
+
+    # /etc/init.d/6relayd start
+    # /etc/init.d/6relayd enable
 
 (0) [DD-WRT: Client Bridged &rarr;](http://www.dd-wrt.com/wiki/index.php/Client_Bridged)  
 (1) [TLWR703N: Warnings &rarr;](http://wiki.openwrt.org/toh/tp-link/tl-wr703n#warnings.gotchas)  
