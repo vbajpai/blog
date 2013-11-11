@@ -12,7 +12,8 @@ Here are the steps to setup the new Konica Minolta Multi Function Printers:
 ![](http://www.konicaminolta.com.au/library/bizhub_652_enlarge_a.jpg)
 
 
-Download and Install the [C652Series Driver &rarr;](http://onyxftp.mykonicaminolta.com/DownloadFile/Download.ashx?fileid=23423&productid=1190)
+Download and Install the [C652Series Driver
+&rarr;](https://o.cses.konicaminolta.com/file/Default.aspx?FilePath=DL/201209/27065201/BHC652PSMacOS108_360MU.dmg)
 
 Goto System Preferences → Print & Scan
 If you don't have the qpilot setup already, follow these [instructions &rarr;](https://teamwork.jacobs-university.de:8443/confluence/display/ircit/How+to+configure+Jacobs+network+printing+on+Mac)
