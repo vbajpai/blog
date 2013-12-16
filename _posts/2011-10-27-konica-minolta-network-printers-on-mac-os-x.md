@@ -9,10 +9,9 @@ tags: []
 Jacobs University Bremen [replaced](https://teamwork.jacobs-university.de:8443/confluence/display/ircit/2011/10/24/Replacement+of+network+printers) its network printers on October 27, 2011.  
 Here are the steps to setup the new Konica Minolta Multi Function Printers:   
 
-![](http://www.konicaminolta.com.au/library/bizhub_652_enlarge_a.jpg)
+![](http://www.officetotal.com.br/imagens/img_produtos/g/75.jpg)
 
-
-Download and Install the [C652Series Driver
+Download and Install the [C652Series Driver (Mac OS X 10.9)
 &rarr;](https://o.cses.konicaminolta.com/file/Default.aspx?FilePath=DL/201209/27065201/BHC652PSMacOS108_360MU.dmg)
 
 Goto System Preferences → Print & Scan
