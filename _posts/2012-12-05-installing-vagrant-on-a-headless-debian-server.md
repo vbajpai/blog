@@ -7,6 +7,9 @@ tags: []
 ---
 {% include JB/setup %}
 
+This post was also contributed by: [github.com/jamesdavidson
+&rarr;](https://github.com/jamesdavidson).
+
 I have decided to perform most of the computation intensive tasks on our
 university server rack. I have a VM provisioned on this rack. Since the
 VM is running an old version of Debian build, I want to keep this build
