@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "OpenWRT on TP Link TL WR703N"
+title: "OpenWRT on TP Link TL WR703N: EUR. 20,99"
 description: ""
 category: 
 tags: []
@@ -23,7 +23,6 @@ available for install via the `opkg` package management system.
 	- [Introspecting stock OpenWRT build](#introspecting-stock-openwrt)
 	- [Enable Wireless (Client Mode)](#enable-wireless-client-mode)
 	- [Update the Packages](#update-the-packages)
-	- [Update the TimeZone](#update-the-timezone)
 	- [Create a Pseudobridge with LAN interface](#create-a-pseudobridge)
   - [Add USB Support](#add-usb-support)
   - [Pivot-Overlay on a USB disk](#pivot-overlay-on-a-usb-disk)
@@ -37,15 +36,7 @@ available for install via the `opkg` package management system.
   - [Unlink `/var` from `/tmp`](#unlink-/var-from-/tmp)
   - [Create a separate user](#create-a-separate-user)
   - [Install development tools](#install-development-tools)
-  - [Assign DNS names to IPv6 Hosts](#assign-dns-names-to-ipv6-hosts)
   - [Enable USB Tethering support](#enable-usb-tethering-support)
-  - [Local DNS using `dnsmasq`](#local-dns-using-dnsmasq)
-  - [Static DHCP Assignments](#static-dhcp-assignments)
-  - [Setup OpenVPN](#setup-openvpn)
-  - [Capture Network Flows](#capture-network-flows)
-  - [Cacti Network Visualization](#cacti-network-visualization)
-  - [Asterisks](#asterisks)
-  - [Cisco VPN](#cisco-vpn)
   - [Setup Print Server](#setup-print-server)
   - [IPv6 Relay](#ipv6-relay)
 
@@ -319,9 +310,6 @@ and installing packages there. Although the cleanest way is to perform a
 pivot overlay, which mounts the whole `/overlay` to an external USB
 disk. We will do this later.
 
-
-#### <a id="update-the-timezone">Update the TimeZone</a>
-<hr/>
 
 #### <a id="create-a-pseudobridge">Create a Pseudobridge with LAN interface</a>
 <hr/>
@@ -927,8 +915,6 @@ Change the swapiness value to make kernel avoid swapping as much as possible
 
 The mount point `/tmp` can also instead be moved to a partition on a USB.
 
-Create a mount point to put `/tmp`
-
     >> sudo mkfs -t ext3 /dev/sdc2
     (openWRT) # uci add fstab mount 
     (openWRT) # uci set fstab.@mount[3].target=/mnt/tmp
@@ -937,6 +923,8 @@ Create a mount point to put `/tmp`
     (openWRT) # uci set fstab.@mount[3].options=rw,noatime
     (openWRT) # uci set fstab.@mount[3].enabled=1
     (openWRT) # uci set fstab.@mount[3].enabled_fsck=1
+
+This creates a mount point to put `/tmp`
 
 ### <a id="unlink-/var-from-/tmp">Unlink `/var` from `/tmp`</a>
 <hr/>
@@ -958,6 +946,8 @@ Create a new symbolic link
 
     (openWRT) # rm /var
     (openWRT) # ln -s /mnt/var /var
+
+The package manager caches will now remain up to date and survive reboots.
 
 ### <a id="create-a-separate-user">Create a separate user</a>
 <hr/>
@@ -1033,10 +1023,6 @@ This is my personal choice of tools
 
 Some people would prefer to install `emacs`
 
-### <a id="assign-dns-names-to-ipv6-hosts">Assign DNS names to IPv6 Hosts</a>
-<hr/>
-
-
 ### <a id="enable-usb-tethering-support">Enable USB Tethering support</a>
 <hr/>
 
@@ -1054,26 +1040,7 @@ Install `rndis` support.
 
     (openWRT) $ sudo opkg install kmod-usb-net-rndis
 
-### <a id="local-dns-using-dnsmasq">Local DNS using `dnsmasq`</a>
-<hr/>
-
-### <a id="static-dhcp-assignments">Static DHCP Assignments</a>
-<hr/>
-
-### <a id="setup-openvpn">Setup OpenVPN</a>
-<hr/>
-
-### <a id="capture-network-flows">Capture Network Flows</a>
-<hr/>
-
-### <a id="cacti-network-visualization">Cacti Network Visualization</a>
-<hr/>
-
-### <a id="asterisks">Asterisks</a>
-<hr/>
-
-### <a id="cisco-vpn">Cisco VPN</a>
-<hr/>
+You're now good to go.
 
 ### <a id="setup-print-server">Setup Print Server</a>
 <hr/>
