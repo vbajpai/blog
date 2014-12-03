@@ -14,8 +14,12 @@ Here are the steps to setup the new Konica Minolta Multi Function Printers:
 Download and Install the [C652Series Driver (Mac OS X 10.9)
 &rarr;](https://o.cses.konicaminolta.com/file/Default.aspx?FilePath=DL/201209/27065201/BHC652PSMacOS108_360MU.dmg)
 
-Goto System Preferences → Print & Scan
-If you don't have the qpilot setup already, follow these [instructions &rarr;](https://teamwork.jacobs-university.de:8443/confluence/display/ircit/How+to+configure+Jacobs+network+printing+on+Mac)
+Download and Install the [C652Series Driver (Mac OS X 10.10)
+&rarr;](https://o.cses.konicaminolta.com/file/Default.aspx?FilePath=DL/201411/14011618/BHC652PSMacOS109_390MU.dmg)
+
+Goto System Preferences → Print & Scan If you don't have the qpilot
+setup already, follow these [instructions
+&rarr;](https://teamwork.jacobs-university.de:8443/confluence/display/ircit/How+to+configure+Jacobs+network+printing+on+Mac)
 
 Change the address to `CAMPUSNETUSERNAME@qpilot.jacobs-university.de` if your mac userID is not your campusNet userID
 
