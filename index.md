@@ -1,11 +1,12 @@
 ---
 layout: page
-title: The Geek Debauchery!
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
 
-Vaibhav Bajpai is a PhD Student in the [Computer Networks and Distributed Systems](http://cnds.eecs.jacobs-university.de) research group at [Jacobs University Bremen](http://jacobs-university.de/). He is trying to understand the impact of network infrastructure changes using large-scale measurement platforms. His website offers some additional background.
+Vaibhav Bajpai is a Postdoctoral Fellow at [TU
+München](https://www.tum.de). His website offers some additional
+background.
 
 [www.vaibhavbajpai.com &rarr;](http://www.vaibhavbajpai.com)  
   
